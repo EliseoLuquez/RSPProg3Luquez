@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "1eb339ec-1965-4421-bc97-2a66c601a1a9",
+		"name": "mascotas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "usuario",
+							"value": "Eliseo",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "cliente@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "cliente",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "567894",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/Programacion3/RSPProg3Luquez\\spmascotas/public/users",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion3",
+						"RSPProg3Luquez",
+						"spmascotas",
+						"public",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "cliente@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "567894",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/Programacion3/RSPProg3Luquez/spmascotas/public/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion3",
+						"RSPProg3Luquez",
+						"spmascotas",
+						"public",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tipo_mascota",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInRpcG8iOiJhZG1pbiIsImNsYXZlIjoiJDJ5JDEwJFZYbzBkVk5XbHVcL1hTSHZxQmZcL01VZW15aXZheEtPVzVpRjVZNEVUeWNSY3ZnaUFnXC96R2dhIn0.dikxLRnM-pUQqKsruflsiqr-UgwlfgjOTDEildtTtok",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "descripcion",
+							"value": "huron",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/Programacion3/RSPProg3Luquez/spmascotas/public/tipo_mascota",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion3",
+						"RSPProg3Luquez",
+						"spmascotas",
+						"public",
+						"tipo_mascota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mascotas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImNsaWVudGVAZ21haWwuY29tIiwidGlwbyI6ImNsaWVudGUiLCJjbGF2ZSI6IiQyeSQxMCRneXNraGFvdWJ6RWgxLjZYaTlJeVdlcVJWMDVySHZ6bTVYQ0VMZUdmMVd0eElaa1hDSVwvLlMifQ.rZj6EM6hvlRNd9IxX7wCvIP07jbTkdkxU4bbXuW5vFQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "1500",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/Programacion3/RSPProg3Luquez/spmascotas/public/mascota",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion3",
+						"RSPProg3Luquez",
+						"spmascotas",
+						"public",
+						"mascota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "turno",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImNsaWVudGVAZ21haWwuY29tIiwidGlwbyI6ImNsaWVudGUiLCJjbGF2ZSI6IiQyeSQxMCRneXNraGFvdWJ6RWgxLjZYaTlJeVdlcVJWMDVySHZ6bTVYQ0VMZUdmMVd0eElaa1hDSVwvLlMifQ.rZj6EM6hvlRNd9IxX7wCvIP07jbTkdkxU4bbXuW5vFQ",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "AC123DS",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "servicio",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "fecha",
+						"value": "10/12/2020",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tipo_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "no atendido",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "fecha",
+							"value": "2-12-2020  10:00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/Programacion3/RSPProg3Luquez/spmascotas/public/turnos",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion3",
+						"RSPProg3Luquez",
+						"spmascotas",
+						"public",
+						"turnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "turno",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImNoZW9AZ21haWwuY29tIiwidGlwbyI6ImFkbWluIiwiY2xhdmUiOm51bGx9.M8WLR5YiqeG94z_wtRIDPLWTMNxcEBq0OIJg163Pw2I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost/Programacion3/RSPProg3Luquez/spmascotas/public/turnos",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion3",
+						"RSPProg3Luquez",
+						"spmascotas",
+						"public",
+						"turnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "turnos",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"type": "text",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInRpcG8iOiJhZG1pbiIsImNsYXZlIjoiJDJ5JDEwJFZYbzBkVk5XbHVcL1hTSHZxQmZcL01VZW15aXZheEtPVzVpRjVZNEVUeWNSY3ZnaUFnXC96R2dhIn0.dikxLRnM-pUQqKsruflsiqr-UgwlfgjOTDEildtTtok"
+					}
+				],
+				"url": {
+					"raw": "localhost/Programacion3/RSPProg3Luquez/spmascotas/public/turno/3",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion3",
+						"RSPProg3Luquez",
+						"spmascotas",
+						"public",
+						"turno",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "facturas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"type": "text",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImNsaWVudGVAZ21haWwuY29tIiwidGlwbyI6ImNsaWVudGUiLCJjbGF2ZSI6IiQyeSQxMCRneXNraGFvdWJ6RWgxLjZYaTlJeVdlcVJWMDVySHZ6bTVYQ0VMZUdmMVd0eElaa1hDSVwvLlMifQ.rZj6EM6hvlRNd9IxX7wCvIP07jbTkdkxU4bbXuW5vFQ"
+					}
+				],
+				"url": {
+					"raw": "localhost/Programacion3/RSPProg3Luquez/spmascotas/public/factura",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Programacion3",
+						"RSPProg3Luquez",
+						"spmascotas",
+						"public",
+						"factura"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
